@@ -1,0 +1,19 @@
+﻿git add
+git commit -m tin nhắn kèm theo file đưa vào
+git push
+
+git t
+
+ls === list xem danh sach
+cd thư mục muốn vào=== change directory --- thay đổi forder
+pwd === path working directory --- xem đang ở forder nào
+mkdir tạo thư mục === make directory
+touch tên file cần tạo === vd touch khanh.html
+
+clear xóa
+
+git init === initialized gõ init sẽ tạo một thư mục .git (ẩn) để có thể kết nối với github.com
+cd .. -----ra ngoài thư mục hiện tại
+cd -al ---- xem tất cả thư mục file (kể cả file ẩn)
+git add . ---- add tất cả thư mục con vào trong(cho vào file ko cho vào thư mục trống)
+git push origin master --- đưa thư mục lên github.com

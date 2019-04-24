@@ -1,0 +1,1 @@
+﻿nhập web >> DNS (tên > số) >> websever(PHP,...)-máy chủ >>HTML+CSS+JS (hiển thị web)
