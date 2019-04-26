@@ -17,3 +17,5 @@ cd .. -----ra ngoài thư mục hiện tại
 cd -al ---- xem tất cả thư mục file (kể cả file ẩn)
 git add . ---- add tất cả thư mục con vào trong(cho vào file ko cho vào thư mục trống)
 git push origin master --- đưa thư mục lên github.com
+
+mv ten_cu ten_moi----- thay đổi tên
