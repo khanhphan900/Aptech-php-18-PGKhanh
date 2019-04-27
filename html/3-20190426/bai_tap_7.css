@@ -24,9 +24,10 @@ body {
     display: flex;
 }
 .background{
-    height: 1em;
+    height: 17px;
     width: 70px;
     background: rgb(236, 17, 138);
+    color: aliceblue;
 }
 #left {
     display: flex;
@@ -34,7 +35,7 @@ body {
     width: 30%;
 }
 #right {
-    width: 70%;
+    width: 45%;
 }
 
 
@@ -43,12 +44,6 @@ body {
     padding: 0px;
 }
 
-#right ol li span {
-    
-    margin-left: 20px;
-    padding-right: 20px;
-    color: aliceblue;
-}
 
 #footer {
     background: rgb(228, 211, 224);
@@ -56,7 +51,4 @@ body {
     margin-left: 280px;
     color: rgb(82, 4, 82);
     font-weight: bold;
-}
-#text-footer{
-    text-decoration: underline;
 }
