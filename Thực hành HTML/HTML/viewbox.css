@@ -1,0 +1,46 @@
+﻿@charset "utf-8";
+
+.red{	
+	width:300px;
+	height:500px;
+	background: red;
+	position:absolute;
+	left:100px;
+	top:200px;
+	z-index:5;
+
+	opacity:0.5;
+}
+
+.green{
+	width: 4000px;
+	height:200px;
+	background: green;
+	position:absolute;
+	left:10px;
+	top:70px;
+}
+
+.yellow{
+	width: 100px;
+	height:2000px;
+	background: yellow;
+	position: absolute;
+	left: 30px;
+	top: 10px;
+	
+}
+
+.blue{
+	width: 100px;
+	height:100px;
+	background: blue;
+	position: fixed;
+	left:80px;
+	top: 0px;
+	
+}
+
+strong{
+opacity:5;
+}

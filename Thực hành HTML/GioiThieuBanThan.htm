@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Giới Thiệu</title>
+	<script>
+       function GioiThieu(){
+            alert("Tôi là Phan Gia Khánh sinh năm 1990");
+        }
+    </script>
+</head>
+<body>
+	<h1 style="background-color: yellow; font-size:30px; text-align: center">Giới thiệu bản thân</h1>
+	
+	<button type="button" onclick="GioiThieu()">Giới thiệu</button></br>	
+
+	<script>
+		var ten= "Phan Gia Khánh"
+		var tuoi="24/01/1990"
+		document.write("Tôi tên là : " + ten + "</br>" + "Sinh ngày : " + tuoi)
+	</script>
+	<hr>
+	<script>
+		function gioiThieu(name="Tèo",year=1990){
+			document.write("Tôi là " + name + " sinh năm " + year);
+		}
+		gioiThieu();
+		document.write("<hr>");
+		gioiThieu("Khánh");
+		document.write("<hr>");
+		gioiThieu("Phan Gia Khánh",1990);
+	</script>
+</body>

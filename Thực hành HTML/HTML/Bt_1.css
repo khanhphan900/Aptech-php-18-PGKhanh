@@ -1,0 +1,57 @@
+﻿body{
+	background: #ffffcc;
+	
+}
+#nen{
+	background: #330000;
+	height:100px;
+	
+}
+.nen{
+	background: #fff000;
+	height:100 px;
+	width:100px;
+}
+.green{
+	width:100px;
+	height:20px;
+	background: green;
+	
+}
+.div1{
+	border: 2px solid black;
+}
+.div2{
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	color: #330000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background:#ccaa66;
+}
+#tieude {
+	background: #ccaa66;
+}
+#tieude h1{
+	color:#330000;
+	
+}
+.danhmuc {
+	background:#E8D882;
+	padding:0px;
+}
+.danhmuc ul{
+	margin:0px;
+	padding:20px;
+}	
+.danhmuc ul li a{
+	text-decoration: none;
+}
+#hinh{
+	margin-bottom:0px;
+	padding:0px;
+}
+.footder{
+	font-style:italic;
+}

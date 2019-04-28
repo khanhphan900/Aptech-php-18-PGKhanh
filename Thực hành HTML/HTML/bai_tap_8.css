@@ -1,0 +1,37 @@
+#main {
+    background: #FFEDCA;
+    width: 730px;
+    height: 270px;
+    margin: 20px auto;
+    display: flex;
+}
+
+#left{
+    margin: auto 20px;
+}
+
+h1{
+    color: rgb(189, 127, 12);
+}
+
+table{
+    margin: 0px auto;
+}
+
+table, th, td {
+    border: 2px solid rgb(138, 23, 122);
+    border-collapse: collapse;
+}
+
+table tr td:first-child{
+    text-align: center;     
+}
+
+table tr:first-child{
+    background: darkorange;
+    color: whitesmoke;
+}
+
+tr:nth-child(even){
+    background: whitesmoke;
+}

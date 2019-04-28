@@ -1,0 +1,49 @@
+body {
+    
+    font-family: Tahoma;
+    font-size: 13px;
+    height: 1000px;
+    margin: 0px auto;
+}
+#tieude {
+    height: 40px;
+    color: pink;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+#banner {
+    background: yellowgreen;
+    
+}
+#left {
+    text-align: center;
+    float: left;
+    width: 30%;
+}
+#right {
+    
+    width: 70%;
+    float: left;
+}
+
+#right ol {
+    margin: 0px;
+    padding: 0px;
+}
+
+#right ol li span {
+    background: rgb(236, 17, 138);
+    margin-left: 20px;
+    padding-right: 20px;
+    color: aliceblue;
+}
+
+#footer {
+    background: rgb(211, 207, 207);
+    clear: left;
+    text-align: right;
+    margin-left: 160px;
+}

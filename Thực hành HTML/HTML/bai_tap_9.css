@@ -1,0 +1,36 @@
+#heading h1{
+    color: #CC0033;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 0px auto;
+}
+
+table, th, td{
+    border: 3px solid orange;
+}
+
+th{
+    background: #CC0033;
+    color: whitesmoke;
+}
+
+.text {
+    text-align: center;
+    color: #CC0033;
+}
+
+td:nth-last-child(2){
+    text-align: center;    
+}
+
+td:last-child{
+    text-align: center;
+}
+
+#textfooter{
+    text-align: left;
+    font-weight: bold;
+}

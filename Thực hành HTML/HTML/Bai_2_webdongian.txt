@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout 1</title>
+</head>
+<body>
+	
+</body>
+</html>
+// clear: left; đưa div ko bị nổi lên div khác
+
+list-style: none; mất đánh dấu của thẻ li (ul li)
+
+text-decoration:none; mất gạch chân của thẻ a
+
+display: block; ?????
+
+height:40px;
+line-height:40px; để canh giữa theo chiều đứng
+
+text-indent:14px; định vị trí cho thẻ a  (icon >> thẻ a)
+
+a:hover{
+	color:orange;
+}			thay đổi màu cho thẻ a khi có chuột
