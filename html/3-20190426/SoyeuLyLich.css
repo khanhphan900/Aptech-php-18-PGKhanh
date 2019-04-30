@@ -1,0 +1,45 @@
+body{
+    width: 700px;
+    margin: 0 auto; 
+}
+header {
+    display: flex;
+    padding: 20px 0;
+}
+
+header #left{
+    width: 70%;
+}
+
+header #right{
+    width: 30%;
+}
+
+header #right img{
+    border:  2px solid rgb(83, 127, 223);
+}
+header h1{
+    text-align: center;
+}
+table{
+
+}
+
+table, th, td{
+    border: 2px solid gray;
+    border-collapse: collapse;
+}
+
+table th{
+    text-align: left;
+    background: rgb(179, 176, 176);
+}
+
+table td:first-child{
+    width: 200px;
+}
+
+.text{
+    font-size: 13px;
+    font-style: italic;
+}
