@@ -1,0 +1,106 @@
+body{
+    margin: 0px;
+    border-right: 10px solid goldenrod;
+    border-left: 10px solid goldenrod;
+} 
+
+header{
+    background: #4286AD;
+    margin: 0 10px;
+    height: 120px;
+    line-height: 120px;
+    padding-left: 30px;
+}
+
+#clear{
+    height: 10px;
+}
+
+#text{
+    color: #ffffff;
+    font-size: 60px;
+    
+}
+
+#menu{  
+    margin: 10px;
+    background: #393839;
+    height: 70px;
+    line-height: 70px;
+}
+
+#menu ul{
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+#menu ul li{
+    padding: 0 20px;
+}
+
+#menu ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#menu ul li:hover{
+    background: #4286AD;
+}
+
+main{
+    display: flex;
+}
+
+main #mainleft{
+    width: 25%;
+    
+}
+
+main ul{
+    margin: 0 10px;
+    padding: 10px 0px ;
+}
+
+main #mainleft ul li{
+    padding: 10px 20px;
+    list-style: none;
+    border-bottom: 2px dashed rgb(211, 207, 207);
+}
+
+main #mainleft ul li a{
+    color: #699FBE;
+    text-decoration: none;
+}
+
+main #mainleft ul li:first-child{
+    background: #31698C;
+    color: #ffffff;
+    border: none;
+}
+
+main #mainright{
+    width: 70%;
+    padding-left: 25px ;
+}
+
+main #mainright ul{
+    padding-left: 30px;    
+}
+
+footer{
+    background: gray;
+    height: 40px;
+    line-height: 40px;
+    text-align: center
+}
+
+footer a:hover{
+    color: black;
+}
+
+footer a{
+    color: #ffffff;
+    text-decoration: none;
+}
