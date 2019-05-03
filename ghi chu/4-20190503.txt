@@ -1,0 +1,5 @@
+﻿extensions 
+prettier chinh lai code ( căn dòng code ) cho đẹp
+beutify  //////////
+
+ctrl + shift + p >>> use  >>> word wrap  >>> Editor: word wrap >>> bounded
