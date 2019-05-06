@@ -1,59 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Sign In</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../4-20190503/css/bootstrap.css" />
-    <style>
-      .btn:hover {
-        background: blue;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-4">
-          <div class="heard my-5 text-center">
-            <img
-              src="image/bootstrap-solid.svg"
-              alt="icon bootstrap"
-              width="80"
-              height="80"
-            />
-          </div>
-          <div class="main text-center">
-            <h2>Please sign in</h2>
-            <form>
-              <input
-                type="email"
-                name="email"
-                class="input"
-                placeholder="Email address"
-              /><br />
-              <input
-                type="password"
-                name="password"
-                class="input"
-                placeholder="Password"
-              /><br />
-              <input type="checkbox" name="Remember_me" />
-              <label>Remember me</label><br />
-              <input
-                type="submit"
-                name="Sign_in"
-                value="Sign_in"
-                class="btn my-4"
-                style="background: #1f97e7; color: aliceblue"
-              />
-            </form>
-          </div>
-          <div class="footer text-secondary text-center mt-5">
-            © 2017-2019
-          </div>
+
+<head>
+  <title>Sign In</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../4-20190503/css/bootstrap.css" />
+  <style>
+    .btn:hover {
+      background: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-4 ">
+        <div class="heard my-5 text-center">
+          <img src="image/bootstrap-solid.svg" alt="icon bootstrap" width="80" height="80" />
+        </div>
+        <div class="main text-center">
+          <h2>Please sign in</h2>
+          <form>
+            <input type="email" name="email" class="form-control" placeholder="Email address" /><br />
+            <input type="password" name="password" class="form-control" placeholder="Password" /><br />
+            <input type="checkbox" name="Remember_me" />
+            <label>Remember me</label><br />
+            <input type="submit" name="Sign_in" value="Sign_in" class="btn my-4 form-control"
+              style="background: #1f97e7; color: aliceblue" />
+          </form>
+        </div>
+        <div class="footer text-secondary text-center mt-5">
+          © 2017-2019
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

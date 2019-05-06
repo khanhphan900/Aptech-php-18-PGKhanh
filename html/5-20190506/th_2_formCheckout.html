@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Form CheckOut </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../4-20190503/css/bootstrap.css">
+</head>
+
+<body class="bg-light">
+    <header>
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-8">
+                    <img src="image/bootstrap-solid.svg" class="my-5" alt="icon bootstrap" width="80" height="80">
+                    <h2> Checkout form </h2>
+                    <p> Below is an example form built entirely with Bootstrap's form controls. Each required form group
+                        has a validation state that can be triggered by attempting to submit the form without completing
+                        it.</p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <form>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-9 d-flex">
+                        <div class="w-75 ">
+                            <h4> Billing address </h4>
+                            <div class="d-flex justify-content-center">
+                                <div class="w-50 ">
+                                    First name <br>
+                                    <input type="text" class="form-control" name="firstname">
+                                </div>
+                                <div class="w-50">
+                                    Last name <br>
+                                    <input type="text" class="form-control" name="lasttname">
+                                </div>
+                            </div>
+                            Username<br>
+                            <div class="input-group">
+                                <div class="input-group input-group-prepend">
+                                    <span class="input-group-text" id="addon-wrapping">@</span>
+
+                                    <input type="text" class="form-control" placeholder="Username"
+                                        aria-label="Username">
+                                </div>
+                            </div>
+                            Email <span class="text-secondary"> (Optional) </span>
+                            <input type="text" name="Email" class="form-control" placeholder="you@example.com">
+                            Address
+                            <input type="text" name="address" class="form-control" placeholder="1234 Main St">
+                            Address 2 <span class="text-secondary"> (Optional) </span>
+                            <input type="text" name="address2" class="form-control" placeholder="Apartment or suite">
+                            <div class="d-flex justify-content-between">
+                                <div style="width:40%">
+                                    Country
+                                    <select class="custom-select">
+                                        <option selected>Choose...</option>
+                                        <option value="1">United States</option>
+                                    </select>
+                                </div>
+                                <div style="width:30%">
+                                    State
+                                    <select class="custom-select">
+                                        <option selected>Choose...</option>
+                                        <option value="1">California</option>
+                                    </select>
+                                </div>
+                                <div style="width:25%">
+                                    Zip
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <hr>
+                            <div>
+                                <input type="checkbox"> Shipping address is the same as my billing address <br>
+                                <input type="checkbox"> Save this information for next time
+                            </div>
+                            <hr>
+                            <div>
+                                <h2> Payment </h2>
+                                <div class="pl-4">
+                                    <input type="radio" class="form-check-input" name="radio" checked>Credit card <br>
+                                    <input type="radio" class="form-check-input" name="radio">Debit card <br>
+                                    <input type="radio" class="form-check-input" name="radio">PayPal <br></div>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <div style="width:45%">
+                                    Name or card <br>
+                                    <input type="text" class="form-control">
+                                    <div class="text-secondary">Full name as displayed on card</div>
+                                </div>
+                                <div style="width:45%">
+                                    Credit card number <br>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-between" style="width: 45%;">
+                                <div style="width: 45%;"> Expiration
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div style="width: 45%;"> CVV
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <hr>
+                            <botton type="botton"> Continue to checkout </botton>
+                        </div>
+                        <div class="w-25">
+                            <h4 class="text-secondary"> Your cart </h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

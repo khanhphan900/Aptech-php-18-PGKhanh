@@ -1,5 +1,7 @@
 ﻿extensions 
 prettier chinh lai code ( căn dòng code ) cho đẹp
 beutify  //////////
+chạy ứng dụng 
+user setting >>> format on save
 
 ctrl + shift + p >>> use  >>> word wrap  >>> Editor: word wrap >>> bounded

@@ -1,0 +1,7 @@
+﻿justify-content-center  canh giữa
+
+align- items-center canh giữa
+
+transition: transform 250ms ease-in-out;?????? web namcoi.com
+
+offset-3 dịch chuyển qua phải 3 cột
