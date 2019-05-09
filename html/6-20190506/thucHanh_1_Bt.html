@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Thực hành Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../4-20190503/css/bootstrap.css" />
+    <style>
+      #son1,
+      #son2,
+      #son3,
+      #son4 {
+        height: 100px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <div class="container">
+    <div id="parent1">
+      <div id="son1" class="col-12 bg-primary"></div>
+      <div id="son2" class="col-12 bg-success"></div>
+    </div>
+    <div id="parent1">
+      <div id="son2">
+        <div id="son3" class="col-12 bg-secondary"></div>
+        <div id="son4" class="col-12 bg-danger"></div>
+      </div>
+    </div>
+  </div>
+</html>
