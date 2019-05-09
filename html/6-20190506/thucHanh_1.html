@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thực hành 1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      #son1,
+      #son2,
+      #son3,
+      #son4 {
+        height: 100px;
+        width: 100%;
+      }
+      #son1 {
+        background: lightblue;
+      }
+      #son2 {
+        background: lightcoral;
+      }
+      #son3 {
+        background: lightgoldenrodyellow;
+      }
+      #son4 {
+        background: #90ee90;
+      }
+      #main,
+      #pather1,
+      #pather2 {
+        display: flex;
+      }
+      @media only screen and (min-width: 1200px) {
+        #pather1,
+        #pather2 {
+          width: 50%;
+        }
+      }
+      @media only screen and (max-width: 1200px) {
+        #son4 {
+          display: none;
+        }
+        #pather1 {
+          width: 66%;
+        }
+        #pather2 {
+          width: 33%;
+        }
+      }
+      @media only screen and (max-width: 992px) {
+        #pather1,
+        #pather2 {
+          width: 100%;
+        }
+        #main,
+        #son4 {
+          display: block;
+        }
+        #son4 {
+          width: 100%;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        #pather1,
+        #pather2 {
+          display: block;
+        }
+      }
+      @media only screen and (max-width: 576px) {
+        #son4 {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="pather1">
+        <div id="son1"></div>
+        <div id="son2"></div>
+      </div>
+      <div id="pather2">
+        <div id="son3"></div>
+        <div id="son4"></div>
+      </div>
+    </div>
+  </body>
+</html>
