@@ -14,16 +14,34 @@
       }
     </style>
   </head>
-  <div class="container">
-    <div id="parent1">
-      <div id="son1" class="col-12 bg-primary"></div>
-      <div id="son2" class="col-12 bg-success"></div>
-    </div>
-    <div id="parent1">
-      <div id="son2">
-        <div id="son3" class="col-12 bg-secondary"></div>
-        <div id="son4" class="col-12 bg-danger"></div>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-8 col-xl-6">
+          <div class="row d-md-flex d-lg-flex">
+            <div
+              id="son1"
+              class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 bg-primary"
+            ></div>
+            <div
+              id="son2"
+              class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 bg-warning"
+            ></div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-xl-6">
+          <div class="row d-md-flex">
+            <div
+              id="son3"
+              class="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-6 bg-secondary"
+            ></div>
+            <div
+              id="son4"
+              class="d-none d-sm-block col-sm-12 col-md-6 d-lg-none col-xl-6 d-xl-block bg-danger"
+            ></div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </body>
 </html>
