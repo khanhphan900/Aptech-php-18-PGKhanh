@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACG,AAAD,QAAG,AAAA,IAAI,CAAC;EACN,MAAM,EAAE,cAAc;CACvB;;AACA,AAAD,QAAG,AAAA,IAAI,CAAC;EACN,MAAM,EAAE,KAAK;CAMd;;AAPA,AAGG,QAHD,AAEA,MAAE,AACA,WAAI,CAAC;EACJ,aAAa,EAAE,IAAI;CACpB",
+    "sources": [
+        "BTtaoWeb_1.scss"
+    ],
+    "names": [],
+    "file": "BTtaoWeb_1.css"
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Carousel</title>
+    <meta charset="utf-8" />
+    <meta name="riewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../4-20190503/css/bootstrap.css" />
+    <style>
+      header ul li a {
+        color: white;
+        text-decoration: none;
+        padding-right: 20px;
+        line-height: 44px;
+      }
+      header ul li a:hover {
+        color: white;
+      }
+      header ul li:nth-child(1) a {
+        font-size: 120%;
+      }
+      header ul li:nth-child(3) a {
+        color: gray;
+      }
+      header ul li:nth-child(3) a:hover {
+        color: lightgray;
+      }
+      header form {
+        height: 60px;
+        line-height: 60px;
+      }
+      main .row .col-lg-4 .bg-secondary {
+        width: 140px;
+        height: 140px;
+        border-radius: 140px;
+        margin: 0 auto;
+      }
+      main .row .col-md-7 {
+        position: relative;
+      }
+      main .row .col-md-5 {
+        width: 370px;
+        height: 370px;
+        background: #eeeeee;
+        line-height: 370px;
+        text-align: center;
+      }
+      main .row .col-md-5 p {
+        color: #aaaaaa;
+        font-size: 54px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="row bg-dark">
+        <div class="col-6">
+          <ul class="nav">
+            <li>
+              <a href="#" class="nav-link active pl-0">Carousel</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link m-0">Home</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Link</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <form class="form-inline justify-content-end">
+            <input type="text" class="form-control" placeholder="Search" />
+            <button type="button" class="btn btn-outline-success m-2">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-4  text-center p-5">
+          <div class="bg-secondary" style="height:140px"></div>
+          <h1>Heading</h1>
+          <p>
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+            Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
+            risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
+            cursus magna.
+          </p>
+          <button class="btn btn-secondary">View details »</button>
+        </div>
+        <div class="col-12 col-lg-4  text-center p-5">
+          <div
+            class="bg-secondary justify-content-center align-items-center"
+          ></div>
+          <h1>Heading</h1>
+          <p>
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+            Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
+            risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
+            cursus magna.
+          </p>
+          <button class="btn btn-secondary">View details »</button>
+        </div>
+        <div class="col-12 col-lg-4  text-center p-5">
+          <div
+            class="bg-secondary justify-content-center align-items-center"
+          ></div>
+          <h1>Heading</h1>
+          <p>
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+            Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
+            risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
+            cursus magna.
+          </p>
+          <button class="btn btn-secondary">View details »</button>
+        </div>
+      </div>
+      <hr class="my-5" />
+      <div class="row m-3 featurette-heading">
+        <div class="col-12 col-md-7">
+          <h2 class="featurette-heading">
+            First featurette heading. It’ll blow your mind.
+          </h2>
+          <p class="lead">
+            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+            ligula porta felis euismod semper. Praesent commodo cursus magna,
+            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+            commodo.
+          </p>
+        </div>
+        <div class="col-12 col-md-5">
+          <p>500x500</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

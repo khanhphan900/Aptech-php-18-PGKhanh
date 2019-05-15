@@ -1,0 +1,13 @@
+header {
+  &__.row {
+    border: 2px solid gray;
+  }
+  &__.row {
+    height: 150px;
+    &__.col-12 {
+      &__ul {
+        padding-right: 10px;
+      }
+    }
+  }
+}
