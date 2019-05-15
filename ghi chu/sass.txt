@@ -1,0 +1,46 @@
+﻿1>>> Cách dùng
+
+	#menu ul { 
+	    background:blue;
+	    #menu ul li {
+		color:red;
+	    }
+	}
+
+2>> Xếp chồng
+
+	.container {
+	     ul{
+		li{
+		    font-weight:bold;
+		    &:hover{color:red}
+		}
+	     }
+
+	}
+
+3>> Biến
+
+	$primary-color:blue;
+	
+	body{ 
+	   color: $primary-color;
+	}
+	
+	h1, h2{
+	   color: $primary-color;
+	}
+
+4>> Mixin
+
+	@mixin button($color){
+            padding: 5px 10px;
+	    background: $color;
+	    color: white;
+	}
+
+	.button {
+	    @include button(red);
+	}
+
+	a { @inclue button(blue); }
