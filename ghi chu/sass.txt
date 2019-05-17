@@ -44,3 +44,5 @@
 	}
 
 	a { @inclue button(blue); }
+
+5>> Kế thừa
