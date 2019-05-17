@@ -4,21 +4,30 @@
     <title>Thực hành 1</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="Thiết kế web/CSS/bootstrap.css" />
-    <style>
-      #son1,
-      #son2,
-      #son3,
-      #son4 {
-        height: 100px;
-        width: 100%;
-      }
-    </style>
+    <link rel="stylesheet" href="../html/4-20190503/css/bootstrap.css" />
   </head>
-  <body>
-    <div class="cointainer d-md-flex">
-      <div id="son1" class="col-md-6 bg-danger"></div>
-      <div id="son2" class="col-md-6 bg-warning"></div>
+  <body class="container">
+    <!-- Example single danger button -->
+    <div class="btn-group">
+      <button
+        type="button"
+        class="btn btn-danger dropdown-toggle"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        Action
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
     </div>
+    <script src="../html/jquery-3.4.1.min.js"></script>
+    <script src="../html/popper.min.js"></script>
+    <script src="../html/bootstrap.js"></script>
   </body>
 </html>
