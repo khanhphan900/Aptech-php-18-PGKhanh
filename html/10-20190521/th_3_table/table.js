@@ -25,3 +25,10 @@ var data = {
         }
     ]
 };
+
+function create(nameOfElement) {
+    return document.createElement(nameOfElement);
+}
+var table = create("table");
+
+console.log(table)
