@@ -2,3 +2,5 @@ setInterval ( function () { chuyenSlide();
 				},2000);
 
 setInterval (chuyenSlide,200);
+
+setTimeout (chuyenSlide,2000);
