@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Table+Ajax</title>
+    <style>
+      table {
+        border: 2px solid royalblue;
+        border-collapse: collapse;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+      th {
+        border: 2px solid royalblue;
+        padding: 5px 0;
+      }
+      td {
+        border: 1px dashed black;
+        border-right: 2px solid royalblue;
+        important: !;
+        padding: 5px 0;
+      }
+
+      th {
+        color: darkred;
+      }
+      td:nth-child(1),
+      td:nth-child(2) {
+        text-align: center;
+      }
+      td:nth-child(1) {
+        font-weight: bold;
+        background: rgb(248, 248, 248);
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="taoTable()">On click me</button>
+
+    <script src="table.js"></script>
+  </body>
+</html>
