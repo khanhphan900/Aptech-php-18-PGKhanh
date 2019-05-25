@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slide</title>
+</head>
+
+<body>
+    <img id="anh1" src="./anh1.jpg" alt="">
+    <img id="anh2" src="./anh2.jpg" alt="">
+    <img id="anh3" src="./anh3.jpg" alt="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#anh1').show();
+            $('#anh2').hide();
+            $('#anh3').hide();
+            $('#anh1').click(function () {
+                $('#anh1').hide();
+                $('#anh2').show();
+            })
+            $('#anh2').click(function () {
+                $('#anh2').hide();
+                $('#anh3').show();
+            })
+            $('#anh3').click(function () {
+                $('#anh3').hide();
+                $('#anh1').show();
+            })
+        });
+    </script>
+</body>
+
+</html>
