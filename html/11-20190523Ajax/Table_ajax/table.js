@@ -12,7 +12,7 @@ function taoTable() {
       }
       // create table
       var table = create("table");
-      document.body.appendChild(table);
+
       // create thead
       var thead = create("thead");
       table.appendChild(thead);
@@ -47,8 +47,11 @@ function taoTable() {
           // console.log(j);
         }
       }
-    }
+    } // xóa và hiển thị lại table tránh click chuột nhiều lần (lỗi thời gian trễ)
+    // document.getElementById("demo").innerHTML = "";
+    // document.getElementById("demo").appendChild(table);
   };
+
   xhtml.open(
     "GET",
     "https://namcoi.com/projects/users-crud-laravel/public/api/users",
