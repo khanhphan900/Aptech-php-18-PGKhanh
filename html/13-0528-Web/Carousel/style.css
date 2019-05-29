@@ -1,0 +1,14 @@
+header span a {
+  color: black;
+  font-weight: bold;
+}
+header span a:nth-child(1) {
+  color: aliceblue;
+  background: black;
+  border-radius: 5px;
+}
+header span a:hover {
+  font-size: 120%;
+  background: lightgray;
+  border-radius: 5px;
+}
