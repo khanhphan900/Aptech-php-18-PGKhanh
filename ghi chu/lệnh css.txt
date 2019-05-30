@@ -1,1 +1,2 @@
 ﻿box-shadow
+filter: brightness(50%)
