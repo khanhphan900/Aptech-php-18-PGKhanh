@@ -8,20 +8,74 @@
     <title>News</title>
     <link rel="stylesheet" href="./bootstrap.css">
     <style>
-
+        #anh1 {
+            background-image: url('./assets/images/1.jpg');
+            background-position: center;
+            background-size: cover;
+            height: 250px;
+            width: 100%;
+            filter: brightness(50%)
+        }
     </style>
 </head>
 
 <body>
-    <header class="container-fluid">
-        <div class="row">
-            <div class="col-4">
+    <header class="container">
+        <div class="row justify-content-between m-3">
+            <div class="col-4 d-md-block d-none">
                 <button class="btn btn-outline-danger">SIGN UP NOW</button>
             </div>
-            <div class="col-4 h1 text-success"> NEWS</div>
+            <div class="col-4 text-center">
+                <h2 class="text-secondary">NEWS</h2>
+            </div>
+            <div class="col-4 text-right  d-md-block d-none">
+                <button class="btn btn-outline-success">SIGN IN</button>
+            </div>
+            <div class="col-4 text-right d-block d-md-none">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu1"
+                        aria-controls="menu1" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+            </div>
         </div>
+        <div class="row d-block d-md-none">
+            <div class="col-12 collapse" id="menu1">
+                <a class="text-dark" href="#">Home</a><br>
+                <a class="text-secondary" href="#">HTML</a><br>
+                <a class="text-secondary" href="#">CSS</a><br>
+                <a class="text-secondary" href="#">JavaScript</a><br>
+                <a class="text-secondary" href="#">PHP</a><br>
+                <a class="text-secondary" href="#">React JS</a><br>
+                <a class="text-secondary" href="#">Laravel</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-none d-md-block">
+                <ul class="nav d-flex justify-content-between">
+                    <li> <a class="nav-link text-dark" href="#">Home</a></li>
+                    <li> <a class="nav-link text-dark" href="#">HTML</a></li>
+                    <li> <a class="nav-link text-dark" href="#">CSS</a></li>
+                    <li> <a class="nav-link text-dark" href="#">JavaScript</a></li>
+                    <li> <a class="nav-link text-dark" href="#">PHP</a></li>
+                    <li> <a class="nav-link text-dark" href="#">React JS</a></li>
+                    <li> <a class="nav-link text-dark" href="#">Laravel</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
     </header>
-
+    <main class="container">
+        <div class="row">
+            <div class="col-4 bg-primary">
+                <div id="anh1"></div>
+                <p class="h4 text-white">Card title</p>
+                <p class="text-white">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+            </div>
+        </div>
+    </main>
     <script src="./jquery-3.4.1.min.js"></script>
     <script src="./popper.min.js"></script>
     <script src="./bootstrap.js"></script>
