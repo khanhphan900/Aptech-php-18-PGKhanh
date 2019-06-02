@@ -1,84 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>News</title>
-    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
     <style>
-        #anh1 {
-            background-image: url('./assets/images/1.jpg');
-            background-position: center;
-            background-size: cover;
-            height: 250px;
-            width: 100%;
-            filter: brightness(50%)
-        }
+      #anh1 {
+        background-image: url("./assets/images/1.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 295px;
+        width: 100%;
+        filter: brightness(50%);
+      }
+      #anh2 {
+        background-image: url("./assets/images/2.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 295px;
+        width: 100%;
+        filter: brightness(50%);
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="container">
-        <div class="row justify-content-between m-3">
-            <div class="col-4 d-md-block d-none">
-                <button class="btn btn-outline-danger">SIGN UP NOW</button>
-            </div>
-            <div class="col-4 text-center">
-                <h2 class="text-secondary">NEWS</h2>
-            </div>
-            <div class="col-4 text-right  d-md-block d-none">
-                <button class="btn btn-outline-success">SIGN IN</button>
-            </div>
-            <div class="col-4 text-right d-block d-md-none">
-                <nav class="navbar navbar-expand-md navbar-light">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu1"
-                        aria-controls="menu1" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </nav>
-            </div>
+      <div class="row py-2">
+        <div class="col-4 d-none d-md-block">
+          <button class="btn btn-outline-danger">SIGN UP NOW</button>
         </div>
-        <div class="row d-block d-md-none">
-            <div class="col-12 collapse" id="menu1">
-                <a class="text-dark" href="#">Home</a><br>
-                <a class="text-secondary" href="#">HTML</a><br>
-                <a class="text-secondary" href="#">CSS</a><br>
-                <a class="text-secondary" href="#">JavaScript</a><br>
-                <a class="text-secondary" href="#">PHP</a><br>
-                <a class="text-secondary" href="#">React JS</a><br>
-                <a class="text-secondary" href="#">Laravel</a>
-            </div>
+        <div class="col-4 h3 text-success text-center  d-none d-md-block">
+          NEWS
         </div>
-        <div class="row">
-            <div class="col-12 d-none d-md-block">
-                <ul class="nav d-flex justify-content-between">
-                    <li> <a class="nav-link text-dark" href="#">Home</a></li>
-                    <li> <a class="nav-link text-dark" href="#">HTML</a></li>
-                    <li> <a class="nav-link text-dark" href="#">CSS</a></li>
-                    <li> <a class="nav-link text-dark" href="#">JavaScript</a></li>
-                    <li> <a class="nav-link text-dark" href="#">PHP</a></li>
-                    <li> <a class="nav-link text-dark" href="#">React JS</a></li>
-                    <li> <a class="nav-link text-dark" href="#">Laravel</a></li>
-                </ul>
-            </div>
+        <div class="col-4 text-right  d-none d-md-block">
+          <img
+            src="./assets/images/_ionicons_svg_md-search.svg"
+            alt=""
+            width="40"
+            height="40"
+          />
+          <button class="btn btn-outline-success">SIGN IN</button>
         </div>
-        <hr>
+      </div>
+      <div class="row">
+        <div class="col-12 d-none d-md-block">
+          <ul class="nav d-flex justify-content-between font-weight-bolder">
+            <li><a class="nav-link text-dark" href="#">&lt;</a></li>
+            <li><a class="nav-link text-dark" href="#">Home</a></li>
+            <li><a class="nav-link text-dark" href="#">HTML</a></li>
+            <li><a class="nav-link text-dark" href="#">CSS</a></li>
+            <li><a class="nav-link text-dark" href="#">JavaScript</a></li>
+            <li><a class="nav-link text-dark" href="#">PHP</a></li>
+            <li><a class="nav-link text-dark" href="#">React JS</a></li>
+            <li><a class="nav-link text-dark" href="#">Laravel</a></li>
+            <li><a class="nav-link text-dark" href="#">&#62;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 h3 text-success d-block d-md-none m-auto">NEWS</div>
+        <div class="col-6 d-block d-md-none">
+          <nav class="navbar navbar-expand-md navbar-light justify-content-end">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#menu1"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+      <div class="row d-block d-md-none">
+        <div class="col-12 collapse" id="menu1">
+          <div class="nav flex-column">
+            <a class="nav-link text-muted" href="#">Home</a>
+            <a class="nav-link text-secondary" href="#">HTML</a>
+            <a class="nav-link text-secondary" href="#">CSS</a>
+            <a class="nav-link text-secondary" href="#">JavaScript</a>
+            <a class="nav-link text-secondary" href="#">PHP</a>
+            <a class="nav-link text-secondary" href="#">React JS</a>
+            <a class="nav-link text-secondary" href="#">Laravel</a>
+          </div>
+        </div>
+      </div>
+      <hr />
     </header>
     <main class="container">
-        <div class="row">
-            <div class="col-4 bg-primary">
-                <div id="anh1"></div>
-                <p class="h4 text-white">Card title</p>
-                <p class="text-white">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
+      <div class="row">
+        <div class="col-6 col-md-4 px-0">
+          <div class="card ">
+            <div id="anh1"></div>
+            <div
+              class="card-img-overlay text-white d-flex flex-column justify-content-end "
+            >
+              <h5 class="card-title ">Card title</h5>
+              <p class="card-text ">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
             </div>
+          </div>
         </div>
+        <div class="col-md-4 px-0">
+          <div class="d-none d-md-block card ">
+            <div id="anh2"></div>
+            <div
+              class="card-img-overlay text-white d-flex flex-column justify-content-end "
+            >
+              <h5 class="card-title ">Card title</h5>
+              <p class="card-text ">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 px-0">
+          <div class="card">
+            <div class="card-header">
+              Hot News
+            </div>
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <span class="text-truncate"
+                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Cupiditate fuga illum quaerat!
+                </span>
+                <span class="badge badge-success">
+                  <i class="fab fa-node-js"></i>
+                </span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <span class="text-truncate">
+                  A expedita, fuga! Ab atque facilis, itaque laborum.
+                </span>
+                <span class="badge badge-danger">
+                  <i class="fab fa-css3-alt"></i>
+                </span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <span class="text-truncate"
+                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </span>
+                <span class="badge badge-warning">
+                  <i class="fab fa-js-square"></i>
+                </span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <span class="text-truncate"
+                  >Cupiditate fuga illum quaerat!
+                </span>
+                <span class="badge badge-success">
+                  <i class="fab fa-node-js "></i>
+                </span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <span class="text-truncate"
+                  >magnam magni minus nihil perferendis quis recusandae
+                  reiciendis reprehenderit sunt
+                </span>
+                <span class="badge badge-success">
+                  <i class="fab fa-html5 "></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="px-0 mt-5" />
+      <div class="row">
+        <div class="col-6">
+          <button class="btn btn-success py-0">Feature</button>
+        </div>
+        <div class="col-6 text-right text-secondary">MORE ></div>
+      </div>
+      <div class="row justify-content-between mt-2 ">
+        <div class="col-2">
+          <a href="# " class="badge badge-success text-capitalize ">Feature</a>
+        </div>
+        <div class="col-2 d-flex justify-content-end">
+          <small class="ml-auto ">
+            <a href="# " class="text-muted text-uppercase"
+              >more
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </small>
+        </div>
+      </div>
     </main>
+
     <script src="./jquery-3.4.1.min.js"></script>
     <script src="./popper.min.js"></script>
     <script src="./bootstrap.js"></script>
-</body>
-
+  </body>
 </html>
