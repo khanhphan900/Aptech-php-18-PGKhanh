@@ -11,8 +11,13 @@
             text-align: center;
             text-transform: uppercase;
         }
-        table th:nth-child(4){
-            width: 100px !important;
+        table th:hover{
+            background: gray;
+        }
+        table td:hover{
+            /* background: dimgrey; */
+            /* font-size: 110%; */
+            color:  lightsalmon;
         }
     </style>
 </head>
@@ -127,7 +132,7 @@ $data = array(
   echo $data[0][$information[0]]."<br>";
 
   ?>
-    <table class="table table-dark table-bordered">
+    <table class="table table-dark table-bordered table-striped">
         <thead>
             <tr>
                 <?php
