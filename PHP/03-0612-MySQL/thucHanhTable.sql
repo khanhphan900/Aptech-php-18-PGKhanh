@@ -14,7 +14,7 @@ INSERT INTO aptech_php_18_PGKhanh.users(id,name,email,phone) value (3,'Zeus Kirk
 -- xem du lieu
 SELECT * FROM aptech_php_18_PGKhanh.users;
 -- Xoa bang
-DROP
+-- DROP
 -- Xoa DU LIEU	
 -- DELETE
 DELETE FROM aptech_php_18_PGKhanh.users Where id=3;
@@ -29,7 +29,7 @@ SET SQL_SAFE_UPDATES = 0;
 UPDATE aptech_php_18_PGKhanh.users
 SET name='Trevor Travis', email='nec.ante.Maecenas@SednequeSed.net'
 WHERE phone='08454646';
-
+	
 CREATE TABLE aptech_php_18_PGKhanh.post(
 id INT PRIMARY KEY AUTO_INCREMENT,
 title varchar(255)
