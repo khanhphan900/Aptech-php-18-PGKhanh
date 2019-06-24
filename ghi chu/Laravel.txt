@@ -1,0 +1,20 @@
+﻿1 >> kết nối với MySQL
+	.env 	DB_CONNECTION=mysql
+		DB_HOST=127.0.0.1
+		DB_PORT=3306
+		DB_DATABASE=aptech_php_18_4
+		DB_USERNAME=root
+		DB_PASSWORD=
+
+  >>> 	namespace App\Http\Controllers;
+
+	use Illuminate\Support\Facades\DB;
+	use Illuminate\Http\Request;
+
+	class UserController extends Controller
+		{
+    		function index(){
+       			$users = DB::table('users')->get();
+       			dd($users);
+    		}
+	}

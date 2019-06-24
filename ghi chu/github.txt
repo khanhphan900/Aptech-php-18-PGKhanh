@@ -19,3 +19,5 @@ git add . ---- add tất cả thư mục con vào trong(cho vào file ko cho và
 git push origin master --- đưa thư mục lên github.com
 
 mv ten_cu ten_moi----- thay đổi tên
+
+rm -rf ten_thu_muc_del
