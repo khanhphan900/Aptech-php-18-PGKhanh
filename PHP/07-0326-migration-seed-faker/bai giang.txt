@@ -1,0 +1,15 @@
+﻿php artisan make:migration create_users_table // tạo migrate
+
+php artisan migrate // chạy migrate
+
+php artisan migrate:rollback // chạy lệnh khi thêm dữ liệu vào table 
+
+php artisan migrate:refresh // chạy tạo và rollback 
+
+
+
+composer dump-autoload //xóa lịch sử lưu trong máy ( khi xóa table vẫn còn lịch sử lưu )
+
+Seed  
+
+Faker
