@@ -1,0 +1,41 @@
+﻿kết nối env
+
+1  xamp >>  workbend tạo database;
+
+2 tạo file migrations >>> php artisan make:migration create_users_table; // tạo file tên ko chuẩn sẽ ko có code drop
+	(trong trương hợp đặt tên ko như trên code sẽ là php artisan make:migration name --class=users)
+	thêm cột (tạo migration nữa rồi thêm cột ) đổi chổ cột ( tìm trong migration)
+3 tạo file seed >>> php artisan make:seeder tên >> dùng faker  trong seed 
+	chạy file seed trong file databaseeder.php chạy lệnh $this->call(UsersTableSeeder::class);
+
+	chạy php artisan db:seed thì sẽ chạy tất cả class
+
+4 	tạo controller UserController
+	web.php 
+		tao route: get ('/
+	code controller 
+		tao file torng view users index,,,
+			@foreach
+5 xem tung nguoi
+	chinhr trong web.php dong 19
+	controller tao function show 19
+	view users show
+6 ấn nút xem chi tiết
+	index.
+	asset trả lại chuổi string chỉ quan tâm trong public/...
+	3 cách
+	form  phải có method
+7 function delete
+	web.php dong 20 >> controller 28 
+	form Method Spoofing thay vào index 11 13
+	them dong 31 tỏng usercontroler
+8 update  lấy lại thông tin đã xóa
+	web.php 21 
+	usercontroller 37 42
+	tạo file edit
+	index them 15 >> lỗi
+	41 user[]
+	web 22 
+	usercontroller 45
+	edit
+	
