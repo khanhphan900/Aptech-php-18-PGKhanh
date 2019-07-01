@@ -1,0 +1,14 @@
+﻿post >> put / patch / delete
+
+
+php artisan make:model User -mc --resource
+
+php artisan make:model Flight -mc --resource
+
+php artisan make:model Flight -c --resource
+
+php artisan route:list
+
+https://laravel.com/docs/5.8/eloquent#mass-assignment
+
+angularjs
