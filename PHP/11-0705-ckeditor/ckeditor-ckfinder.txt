@@ -1,0 +1,4 @@
+﻿https://namcoi.com/tich-hop-ckfinder-3-vao-ckeditor-4-trong-du-an-laravel-5-5-xampp-php-7-1/
+tải ckeditor ckfinder 
+past vào public của laravel 
+
