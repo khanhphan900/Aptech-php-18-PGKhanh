@@ -1,0 +1,12 @@
+﻿<base href="{{asset('')}}"> 
+trong head >> để web có thể bắt được ccs js bootstrap
+
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+                responsive: true
+        });
+    });
+    </script>
+
+>> hiển thị số thành phần table và số list (Previous| 1 | 2 | next)

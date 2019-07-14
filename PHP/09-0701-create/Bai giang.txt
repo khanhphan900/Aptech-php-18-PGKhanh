@@ -15,3 +15,6 @@ angularjs
 
 composer install
 php artisan key:generate
+
+@yield('content') ~ @section('content') 
+@include('name')

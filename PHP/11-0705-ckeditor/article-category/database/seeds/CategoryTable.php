@@ -1,0 +1,24 @@
+<?php
+
+use App\Category;
+use Faker\Factory as Faker;
+use Illuminate\Database\Seeder;
+
+class CategoryTable extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $faker = Faker::create();
+        foreach(range(1, 10) as $index){
+            Category::create([
+                'name' => $faker->name,
+                'slug' => $faker->slug,
+            ]);
+        };
+    }
+}
