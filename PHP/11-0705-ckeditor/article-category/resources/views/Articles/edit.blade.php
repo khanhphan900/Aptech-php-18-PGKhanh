@@ -1,28 +1,32 @@
 @extends('layouts.master')
 
 @section('content')
-<form action="{{route('Articles.update', $user->id)}}" method="post">
-    <input type="hidden" name="_token" value="{{ csrf_token() }}"> 
-  <div class="container w-50 my-3">
+<form action="{{route('Articles.update', $user->slug)}}" method="post">
+    {{-- <input type="hidden" name="_token" value="{{ csrf_token() }}">  --}}
+    <input type="hidden" name="_method" value="put"> {{csrf_field()}} 
+   
+    {{-- {{ method_field('PUT') }}
+  <input type="hidden" name="_token" value="{{ csrf_token() }}">  --}}
+    <div class="container w-50 my-3">
     <div class="row">
       <div class="col-12">
         <div class="form-group">
-          <label for="">Title</label>
-          <input type="text" class="form-control" name="title" id="" placeholder="Title" value="{{$user->title}}">
+          <label for="title">Title</label>
+          <input type="text" class="form-control" name="title" id="title" placeholder="Title" value="{{$user->title}}">
         </div>
         <div class="form-group">
-          <label for="">Slug</label>
-          <input type="text" class="form-control" name="slug" id="" placeholder="Slug" value="{{str_replace('-',' ',$user->slug)}}">
+          <label for="slug">Slug</label>
+          <input type="text" class="form-control" name="slug" id="slug" placeholder="Slug" value="{{str_replace('-',' ',$user->slug)}}">
         </div>
         <div class="form-group">
-          <label for="">Description</label>
-          <input type="text" class="form-control" name="description" id="" placeholder="Description" value="{{$user->description}}">
+          <label for="description">Description</label>
+          <input type="text" class="form-control" name="description" id="description" placeholder="Description" value="{{$user->description}}">
         </div>
         <div class="form-group">
-          <label for="">Image Path</label>
-          <input type="text" class="form-control" name="image_path" id="" placeholder="Image Path" value="{{$user->image_path}}">
+          <label for="image_path">Image Path</label>
+          <input type="text" class="form-control" name="image_path" id="image_path" placeholder="Image Path" value="{{$user->image_path}}">
         </div>
-          <script src="{{asset('ckeditor/ckeditor.js')}}"></script>
+        <script src="{{asset('ckeditor/ckeditor.js')}}"></script>
         <script src="{{asset('ckfinder/ckfinder.js')}}"></script>
 
         <textarea name="content" id="editor">{{$user->content}}</textarea>

@@ -24,10 +24,10 @@
                     <td>{{$user->image_path}}</td>
                     <td>{{$user->content}}</td>
                     <td class="m-auto d-flex">
-                        <form action="{{route('Articles.show', $user->id)}}" method="get">
+                        <form action="{{route('Articles.show', $user->slug)}}" method="get">
                             <button class="btn btn-info">Show</button>
                         </form>
-                        <form action="{{route('Articles.edit', $user->id)}}" method="get">
+                        <form action="{{route('Articles.edit', $user->slug)}}" method="get">
                             <button class="btn btn-warning mx-4"> Edit</button>
                         </form>
                         <form action="{{route('Articles.destroy', $user->id)}}" method="post">

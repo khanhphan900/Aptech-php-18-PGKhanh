@@ -53,11 +53,11 @@ class ArticleController extends Controller
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        $user = Article::find($id);
+        $user = Article::where('slug', $slug)->get();
         // dd($user);
-        return view('Articles.show', ['user' => $user]);
+        return view('Articles.show', ['user' => $user[0]]);
     }
 
     /**
@@ -66,10 +66,11 @@ class ArticleController extends Controller
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($slug)
     {
-        $user = Article::find($id);
-        return view('Articles.edit', ['user' => $user]);
+        $user = Article::where('slug', $slug)->get();
+        // dd($user);
+        return view('Articles.edit', ['user' => $user[0]]);
     }
 
     /**
@@ -79,15 +80,21 @@ class ArticleController extends Controller
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $slug)
     {
-        $user = Article::find($id);
-        $user->title = $request->title;
-        $user->slug = $request->slug;
-        $user->description = $request->description;
-        $user->content = $request->content;
-        $user->save();
-        return redirect()->route('Articles.show', $user->id);
+        $title = $request->title;
+        $slug = $request->slug;
+        $description = $request->description;
+        $content = $request->content;
+        $image_path = $request->image_path;
+        Article::where('slug',$slug)->update([
+            'title'=>$title,
+            'slug'=>$slug,
+            'description'=>$description,
+            'content'=>$content,
+            'image_path'=>$image_path
+        ]);
+        return redirect()->route('Articles.show', $slug);
     }
 
     /**

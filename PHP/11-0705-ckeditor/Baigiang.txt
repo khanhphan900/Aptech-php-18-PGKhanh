@@ -1,0 +1,13 @@
+﻿relationship
+
+lưu dữ liệu vào 3 bảng
+sync == đồng bộ >>> sync(... , false) >>> đồng bộ ,true bất đồng bộ  sync ????
+
+
+show (article $article){
+	dd($article->categories) // categories function in model
+}
+
+
+dung js >> stacks
+conditional tenary operator

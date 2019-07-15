@@ -17,7 +17,6 @@ class CategoryTable extends Seeder
         foreach(range(1, 10) as $index){
             Category::create([
                 'name' => $faker->name,
-                'slug' => $faker->slug,
             ]);
         };
     }
