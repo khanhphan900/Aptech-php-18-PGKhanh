@@ -1,0 +1,27 @@
+﻿belongsTo thuộc về
+
+user hasone phone
+
+phone belongsTo user
+
+//
+
+one to many
+
+posts >>> comments
+
+tạo bảng thứ 3 tối ưu hóa dữ liệu ?
+không tạo bảng thì phải thêm cột vào comments
+
+post -> hasmany comment
+comment -> belongsTo post
+
+$comment = App\Post::find(1)->comments()->where('title', 'foo')->first();
+tìm vị trí 1 lấy hết comments ở vị trí title của foo lấy vị trí đầu tiên 
+
+$roles = App\User::find(1)->roles()->orderBy('name')->get();
+tìm ông 1 all vị trí roles liệt kê tên vị trí lấy ra hết
+
+$user->roles()->detach(); bỏ ra tất cả roles
+
+hiển thị ảnh  {!! $text !!} th

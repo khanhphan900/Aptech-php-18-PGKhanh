@@ -43,7 +43,9 @@ class ArticleController extends Controller
         $user->slug = $request->slug;
         $user->description = $request->description;
         $user->content = $request->content;
+        $user->image_path = $request->image_path;
         $user->save();
+        $user->categories()->sync($request->categories, false);
         return redirect()->route('Articles.index');
     }
 
