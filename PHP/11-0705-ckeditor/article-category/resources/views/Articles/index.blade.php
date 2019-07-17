@@ -23,7 +23,7 @@
                     <td>{{$user->description}}</td>
                     <td>{{$user->image_path}}</td>
                     <td>{{$user->content}}</td>
-                    <td class="m-auto d-flex">
+                    <td class="d-flex m-auto justify-content-center">
                         <form action="{{route('Articles.show', $user->slug)}}" method="get">
                             <button class="btn btn-info">Show</button>
                         </form>

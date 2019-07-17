@@ -15,25 +15,25 @@
                 <tr>
                     <td>{{$user->id}}</td>
                     <td>{{$user->name}}</td>
-                    <td class="m-auto">  
-                        {{-- <form action="{{route('Categories.show', $user->id)}}" method="get"> --}}
+                    <td class="d-flex m-auto justify-content-center">  
+                        <form action="{{route('categories.show', $user->id)}}" method="get">
                             <button class="btn btn-info">Show</button>
-                        {{-- </form> --}}
-                        {{-- <form action="{{route('Categories.edit', $user->id)}}" method="get"> --}}
+                        </form>
+                        <form action="{{route('categories.edit', $user->id)}}" method="get">
                             <button class="btn btn-warning mx-4"> Edit</button>
-                        {{-- </form> --}}
-                        {{-- <form action="{{route('Categories.destroy', $user->id)}}" method="post"> --}}
-                            {{-- <input type="hidden" name="_method" value="delete"> {{csrf_field()}} --}}
+                        </form>
+                        <form action="{{route('categories.destroy', $user->id)}}" method="post">
+                             <input type="hidden" name="_method" value="delete"> {{csrf_field()}}
                             <button class="btn btn-danger">Delete</button>
-                        {{-- </form> --}}
+                        </form>
                     </td>
                 </tr>
             @endforeach
             </tbody>
         </table>
-        {{-- <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center">
         {{$category->links()}}
-        </div> --}}
+        </div>
     </main>
 @endsection
 

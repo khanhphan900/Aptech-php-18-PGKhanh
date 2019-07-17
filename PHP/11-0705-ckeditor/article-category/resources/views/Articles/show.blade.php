@@ -10,8 +10,10 @@
                 <p>{{$user->content}}</p>
                 <p>{{$user->created_at}}</p>
                 <p>{{$user->updated_at}}</p>
-                
             </div>
+        </div>
+        <div>
+            <a href="{{route('Articles.index')}}">back</a>
         </div>
     </main>
 @endsection

@@ -23,7 +23,7 @@ class ArticlesTable extends Seeder
         //     ]);
         // }; 
         // Cách này sẽ không thấy được thời gian create_at và update_at
-        foreach (range(1, 5) as $index){
+        foreach (range(1, 10) as $index){
             Article::create([
                 // 'title' => $faker->title,
                 'title'=>$faker->sentence,
