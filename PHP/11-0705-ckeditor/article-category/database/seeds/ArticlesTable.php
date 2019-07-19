@@ -29,7 +29,7 @@ class ArticlesTable extends Seeder
                 'title'=>$faker->sentence,
                 'slug' => $faker->slug,
                 'description' => $faker->text($maxNbChars = 15),
-                'content' => $faker->text,
+                'content' => $faker->numberBetween(20,2000),
                 'image_path' => $faker->image($dir = null, $width = 640, $height = 480, 'cats', false)
             ]);
         };

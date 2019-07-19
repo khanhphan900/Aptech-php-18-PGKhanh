@@ -1,0 +1,14 @@
+﻿pagination them vào blog
+
+API
+
+Restfull API >>  may chu tra  ve JSON/XML >> dung AJAX
+
+ ex Route::resource()
+tao APP/HTTP/Controller/API/Controller.php
+
+chuyển dữ liệu API (mảng) bằng JSON.stringify
+
+làm login 
+tạo dự án mới +
+php artisan make:auth
