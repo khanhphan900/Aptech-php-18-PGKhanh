@@ -1,0 +1,27 @@
+header li:hover {
+    color: red;
+}
+#anh1 {
+    background: url("../img/1.jpg") no-repeat;
+    width: 100%;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    font-size: 50%;
+}
+
+#anh2 {
+    background: url("../img/2.jpg") no-repeat;
+    width: 100%;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+#anh3 {
+    background: url("../img/3.jpg") no-repeat;
+    width: 100%;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+}
