@@ -14,8 +14,9 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::paginate(10);
-        return view('users.index',['users'=>$users]);
+        $users = User::paginate(5);
+        // dd($users);
+        return view('user.index', ['users'=>$users]);
     }
 
     /**
@@ -25,7 +26,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('users.create');  
+        return view('user.create');
     }
 
     /**
@@ -36,10 +37,10 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $user = new User;
-        $name = $user->name =  $request->name;
-        $email = $user->email = $request->email;
-        $password = $user->password = $request->password;
+        $user = new User();
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password = $request->password;
         $user->save();
         return redirect()->route('users.index');
     }
@@ -50,10 +51,11 @@ class UserController extends Controller
      * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(User $user)
+    public function show($id)
     {
-        $user = User::find($user);
-        return view('users.show',['user'=>$user[0]]);
+        $user = User::find($id);
+        // dd($user);
+        return view('user.show', ['user'=>$user]);
     }
 
     /**
@@ -62,10 +64,10 @@ class UserController extends Controller
      * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(User $user)
+    public function edit($id)
     {
-        $user = User::find($user);
-        return view('users.edit',['user'=>$user[0]]);
+        $user = User::find($id);
+        return view('user.edit', ['user'=>$user]);
     }
 
     /**
@@ -77,14 +79,12 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        $name = $request->name;
-        $email =  $request->email;  
-        User::where('id',$user->id)
-        ->update([
-            'name' => $name,
-            'email' => $email
+        User::where('id', $user->id)->update([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => $request->password,
         ]);
-        return redirect()->route('users.show',$user);
+        return redirect()->route('users.show', $user);
     }
 
     /**
@@ -93,9 +93,10 @@ class UserController extends Controller
      * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user)
+    public function destroy($id)
     {
-        $user->delete();
+        $user = User::find($id);
+        $user -> delete();
         return redirect()->route('users.index');
     }
 }

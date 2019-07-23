@@ -1,8 +1,8 @@
 <?php
-
+use App\User;
 use Illuminate\Database\Seeder;
 
-class UserTableSeeder extends Seeder
+class UsersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,13 +12,12 @@ class UserTableSeeder extends Seeder
     public function run()
     {
         $faker = Faker\Factory::create();
-        for ( $i=0;$i<10;$i++){
-            DB::table('users')->insert([
+        foreach(range(1, 10) as $index){
+            User::create([
                 'name' => $faker->name,
                 'email' => $faker->email,
-                'password'=>bcrypt('123')
+                'password' => bcrypt('123456'),
             ]);
-
-        }
+        };
     }
 }
